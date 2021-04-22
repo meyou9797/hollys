@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    height: 480px;/*부모가 닫혀있어서 세로값을 줌*/
+    overflow: hidden;
+    position:relative;
+}
+.mainSlider img{
+     position: absolute;
+     left: 50%;
+     margin-left: -960px;
+}
+
+/*메인컨텐츠01*/
+.conWrap{
+    font-size:13px;
+    margin-top:50px;}/*부모폰트속성 상속해주기*/
+.mainCon01{}
+
+.con01Box{
+    width: 205px;
+    margin-right: 35px;
+    float:left;
+}
+.con01Box h3{}
+.con01Box h3 img{}
+
+
+.mall{
+    width: 460px;
+}
+.mall p{margin:10px 0;}
+.mallMenu{}
+.mallMenu li{
+    float:left;
+    text-align: center;
+    background:url(../images/mall_bar01.gif) no-repeat left center;
+    padding:20px;
+}
+.mallMenu li:first-child{background:none;}/*제일왼쪽bar 없애기*/
+.mallMenu li a{}
+.mallMenu li img{display:block;}
+.store{margin-right: 0;}
+
+/*메인컨텐츠02*/
+.mainCon02{}
+.mainCon02 div{float:left;}
+.mainCon02 div a{}
+.mainCon02 div img{display:block;}
+
+/*메인컨텐츠03*/
+.mainCon03{
+    
+    padding:50px 0;
+    border-bottom:2px solid #7a2f36; /*경계선 만드는것*/
+    margin-bottom:50px;
+}
+
+.con03Box{
+    width:205px;
+    float:left;
+    margin-right:35px;
+    margin-top:50px;
+    font-size:12px;
+
+}
+.con03Box h3{}
+.con03Box h3 img{}
+.con03Box p{margin:10px 0;}
+
+.arrow{}
+.arrow img{vertical-align:top;}
+
+.newsList{margin-top:10px;}/*윗라인정렬시켜주기위해*/
+.newsList li{
+    line-height: 18px;/*뉴스리스트 행간*/
+    position:relative;
+}
+.newsList li a{
+    display: block;
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*점처리*/
+}
+.newsList li span{
+    position:absolute;
+    top:0;
+    right: 0;
+}
+
+.con03Quick{
+    top:10px;
+    width:220px;
+    margin-right:0;
+}
+.con03Quick li{
+    float:left;
+    text-align:center;
+    background:url(../images/mall_bar01.gif) no-repeat;
+    padding:0 7px;
+}
+.con03Quick li:first-child{background:none;}
+.con03Quick li a{}
+.con03Quick li img{
+    display:block;
+    margin:0 auto;    
+}
+
+/*메인컨텐츠04*/
+.mainCon04{}
+.con04Tit{}
+.con04Tit img{display: block;}
+.con04Tit h2{
+    float:left;
+}
+.con04Sns{
+    float: left;
+}
+.con04Sns li{
+    float:left;
+    margin-left: 10px;
+}
+
+.con04Menu{}
+.con04Menu li{
+    width: 205px;
+    float:left;
+    margin-right: 35px;
+    background: url(../images/48_48.png) no-repeat left center;
+    padding-left: 50px;
+    box-sizing: border-box;
+    
+}
+.con04Menu li:last-child{margin-right: 0;}
+.con04Menu li a{}
+.con04Menu li span{color:#3366ff;}

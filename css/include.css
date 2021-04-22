@@ -1,0 +1,112 @@
+@charset "utf-8";
+    
+/*헤더*/
+#header{
+    text-align: center;
+    position:relative;
+    padding-top:50px;
+}
+#header h1{}
+#header h1 a{}
+#header h1 img{}
+
+.gnb{
+    display:inline-block;
+    margin-bottom: -4px;}
+.gnb>li{
+    float: left;
+    padding:20px 30px;
+    position: relative;
+}
+.gnb li a{}
+.gnb li img{}
+
+/*호버*/
+.gnb li .on{display:none;}
+.gnb li:hover .on{display:block;}
+.gnb li:hover .off{display:none;}
+
+/*서브메뉴*/
+.lnb{
+    z-index: 1;
+    width: 100%;
+    line-height: 40px;
+    position:absolute;
+    left: 0;
+    background:#fff;
+    top:5px;
+    display: none;
+}
+.gnb>li:hover .lnb{display:block;}
+.lnb li{}
+.lnb li a{}
+
+
+
+.util01{
+    position:absolute;
+    top:0;
+}
+.util01 li{
+    width:99px;
+    height: 76px;
+    float:left;
+}
+.hAca a img{
+    padding-top:20px;
+}
+.util01 li a{
+    height: 100%;
+    display:block;
+}
+.util01 li img{}
+
+.util02{
+    position:absolute;
+    top:20px;
+    right:0;
+}
+.util02 li{
+    float:left;
+    margin-left: 15px;
+}
+.util02 li a{}
+.util02 li img{}
+
+/*푸터*/
+#footer{
+    background:url(../images/bg_footer.gif);/*푸터배경을 넣음 이미지사이즈 그대로 출력 no-repeat안하면 전체적으로 패턴박본되어박스영역에 채워짐*/
+    font-size:14px;
+    padding:50px 0;/*배경을 늘리기위해 패딩을 줌,마진을 주면 bg이미지 위아래로 여백생김*/
+    margin-top:80px;
+}
+.fMenu{}
+.fMenu li{
+    float: left; /*각각의 li를 옆으로정렬,cf필수*/
+    text-align: center;
+}
+.fMenu li:hover{}
+.fMenu li:after{
+    content:"";/*에프터 완성시켜주는 요소*/
+    display:inline-block;/*블락으로 주면 a태그와 박스선 떨어지기땜 인라인블락으로*/
+    vertical-align: middle;/*a태그와 선을정렬할때는 같이 버티컬 줘야함*/
+    width: 1px;/*content=""안의 박스를 만들어줌*/
+    height: 12px;/*선을 박스로 만듦*/
+    background-color: #fff;/*선색깔*/
+    margin:0 5px;/*패딩을 주면 안쪽부터 가로선 적용되기때문에 마진줘야함*/
+}
+.fMenu li:last-child::after{
+    display: none;/*요소검사할때 영역은 잡히나 눈에 보이지 않게 하는방법*/
+}
+.fMenu li a{
+    color: #fff;
+    vertical-align:middle;/*a태그와 선을 정렬할때는 같이 버티컬 사용*/
+}
+.fMenu li:hover a{/*li태그안에 있는 각각의 태그가 마우스 올렸을때 색상변환*/
+    color: #000;
+}
+.fInfo{
+    color: #de898e;
+    margin-top:20px;
+    font-size:12px;
+}
